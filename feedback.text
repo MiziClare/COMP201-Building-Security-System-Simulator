@@ -1,0 +1,22 @@
+Set codes with fire(abcdefgh) burglar(0123456789) Expected INVALID_FIRE_CODE actual INVALID_FIRE_CODE test passed score is 1
+Set codes with fire(abcdefghfgfgfffffff) burglar(0123456789) Expected INVALID_FIRE_CODE actual INVALID_FIRE_CODE test passed score is 2
+Set codes with fire(!&*##$$%%^) burglar(0123456789) Expected INVALID_FIRE_CODE actual INVALID_FIRE_CODE test passed score is 3
+Set codes with fire(abcdefghij) burglar(012345) Expected INVALID_BURGLARY_CODE actual INVALID_BURGLARY_CODE test passed score is 4
+Set codes with fire(abcdefghij) burglar(012345612133446575656) Expected INVALID_BURGLARY_CODE actual INVALID_BURGLARY_CODE test passed score is 5
+Set codes with fire(abcdefghij) burglar(abcdefghij) Expected INVALID_BURGLARY_CODE actual INVALID_BURGLARY_CODE test passed score is 6
+Set codes with fire(abcdefghij) burglar(1234567890) Expected OK actual OK test passed score is 7
+Check fire code with code =abcdefg Expected INVALID_FIRE_CODE actual INVALID_FIRE_CODE test passed score is 8
+Check fire code with code =abcdefghij Expected OK actual OK test passed score is 9
+Check fire code with code =abcdefghij1 Expected BAD_FIRE_CODE actual BAD_FIRE_CODE test passed score is 10
+Check fire code with code =abcdefghij1 Expected BAD_FIRE_CODE actual BAD_FIRE_CODE test passed score is 11
+Check fire code with code =abcdefghij1 Expected BAD_FIRE_CODE or CARD_LOCKED or CARD_LOCKED_FIRE actual BAD_FIRE_CODE test passed score is 12
+Check fire code with code =abcdefghij1 Expected CARD_LOCKED or CARD_LOCKED_FIRE actual CARD_LOCKED test passed score is 13
+Check burglar code with code =1234567 Expected INVALID_BURGLARY_CODE actual INVALID_BURGLARY_CODE test passed score is 14
+Check burglar code with code =abcdefghi Expected INVALID_BURGLARY_CODE actual INVALID_BURGLARY_CODE test passed score is 15
+Check burglar code with code =1234567890 Expected OK actual OK test passed score is 16
+Check burglar code with code =1234567895 Expected BAD_BURGLARY_CODE actual BAD_BURGLARY_CODE test passed score is 17
+Check burglar code with code =1234567895 Expected BAD_BURGLARY_CODE actual BAD_BURGLARY_CODE test passed score is 18
+Check burglar code with code =1234567895 Expected BAD_BURGLARY_CODE or CARD_LOCKED or BAD_BURGLARY_CODE actual BAD_BURGLARY_CODE test passed score is 19
+Check burglar code with code =1234567895 Expected CARD_LOCKED or CARD_LOCKED_BURGLAR_ALARM actual CARD_LOCKED test passed score is 20
+Total is 20
+Out of 20
